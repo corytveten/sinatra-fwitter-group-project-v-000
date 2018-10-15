@@ -2,7 +2,7 @@ class Tweet < ActiveRecord::Base
 	belongs_to :user
 
 	def slug
-      username.downcase.gsub(" ", "-")
+      self.username.downcase.gsub(" ", "-")
     end
 
     def find_by_slug(slug)
