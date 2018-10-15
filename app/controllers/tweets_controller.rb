@@ -36,7 +36,7 @@ class TweetsController < ApplicationController
       tweet = Tweet.create(content: params[:content])
       tweet.user = current_user
       tweet.save
-      redirect to "/tweets/#{@tweet.id}"
+      redirect to "/tweets/#{tweet.id}"
     end
   end
 
