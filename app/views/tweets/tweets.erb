@@ -2,7 +2,7 @@
 
 
   <% @tweets.each do |tweet| %>
-  <a href="/users/<%=tweet.user.slug%>"><%=tweet.user.username%></a>:
+  <a href="/users/<%=tweet.user.slug%>"><%=tweet.user.username%></a>
 		<a href="/tweets/<%=tweet.id%><%=tweet.content%></a>
   <% end %>
 
