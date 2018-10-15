@@ -37,6 +37,7 @@ class TweetsController < ApplicationController
       tweet.user = current_user
       tweet.save
       redirect to "/tweets/#{@tweet.id}"
+    end
   end
 
 
